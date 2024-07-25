@@ -6,3 +6,4 @@
 - Font Onest https://fontsource.org/fonts/onest/install
 - webm Video Optimization
     - Web component for Youtube Video optimization https://github.com/justinribeiro/lite-youtube 
+- Flowbite for the Footer

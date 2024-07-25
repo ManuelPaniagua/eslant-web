@@ -1,42 +1,61 @@
 ---
 import Logo from "./Logo.astro";
-// import Button from "@/components/Button.tsx"
-import HeaderLink from "@/components/HeaderLink.astro";
-
-// import MenuIcon from "@/components/icons/Menu.astro";
-// import CloseIcon from "@/components/icons/Close.astro";
-
-const { currentLocale } = Astro;
 ---
 
 <header id="header-nav" class="fixed top-0 w-full px-6 py-4 z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between gap-16">
-    <HeaderLink checkActive={false} href={"/"} class="relative z-10">
-      <Logo class="w-10" />
-      <nav
-        id="header-menu"
-        class="fixed w-full h-dvh inset-0 bg-[#151a36]/90 md:text-xl lg:text-xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:flex-row md:translate-y-[initial]"
+  <nav>
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+    >
+      <a
+        href="https://flowbite.com/"
+        class="flex items-center space-x-3 rtl:space-x-reverse"
       >
-        <!-- <HeaderLink class="text__glowing" href={translatePath("/vota/")}>
-          {t("nav.vota")}
-        </HeaderLink>
-        <HeaderLink class="text__glowing" href={translatePath("/info/")}>
-          {t("nav.info")}
-        </HeaderLink>
-        <HeaderLink class="text__glowing" href={translatePath("/archivo/")}>
-          {t("nav.archivo")}
-        </HeaderLink> -->
-        <!-- <Button
-          className="md:py-2 md:ml-auto md:text-base lg:text-base"
-          url="https://drive.google.com/file/d/1D7IvIqMyqAoG58fuk8bc0JvhAmrWBbOK/view"
+        <Logo />
+      </a>
+      <button
+        data-collapse-toggle="navbar-default"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
         >
-          {i18n.HEADER_BUTTON}
-        </Button> -->
-        <a href="#header-nav" class="md:hidden absolute top-6 right-6">
-          <!-- <CloseIcon /> -->
-        </a>
-      </nav>
-      <a href="#header-menu" class="md:hidden"></a>
-    </HeaderLink>
-  </div>
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+        >
+          <li>
+            <a
+              href="#"
+              class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 dark:text-white md:dark:text-blue-500"
+              aria-current="page">Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >About</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
