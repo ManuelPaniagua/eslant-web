@@ -7,13 +7,27 @@ import BentoItem from "./BentoItem.astro";
 >
   <BentoItem
     class:list="col-span-10 md:col-span-4"
+    title="LA ALFOMBRA BLANCA"
+    subtitle="16 de febrero de 2024"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-950
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/grefg.webp');"
+    >
+    </div>
+  </BentoItem>
+  <BentoItem
+    class:list="col-span-10 md:col-span-6"
     title="ANDORRA: EL CÉNIT DE  LOS PREMIOS ESLANT"
   >
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-blue-950
-        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      -z-10 h-full w-full bg-blue-950
+      bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/mountain.webp');"
     >
     </div>
@@ -26,20 +40,6 @@ import BentoItem from "./BentoItem.astro";
   </BentoItem>
   <BentoItem
     class:list="col-span-10 md:col-span-6"
-    title="LA ALFOMBRA BLANCA"
-    subtitle="16 de febrero de 2024"
-  >
-    <div
-      slot="image"
-      class="background transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full bg-blue-950
-    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/mountain.webp');"
-    >
-    </div>
-  </BentoItem>
-  <BentoItem
-    class:list="col-span-10 md:col-span-6"
     title="LA GALA"
     subtitle="17 de febrero de 2024"
   >
@@ -48,9 +48,17 @@ import BentoItem from "./BentoItem.astro";
       class="background transition-scale absolute bottom-0 left-0 top-0
 -z-10 h-full w-full bg-blue-950
 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/mountain.webp');"
+      style="background-image: url('/pistas.webp');"
     >
     </div>
+    <p slot="content" class="max-w-xl">
+      Una gala llena de emoción,<strong
+        >con la entrega de premios, conciertos de artistas internacionales, y
+        una gran cantidad de contenido
+      </strong> y contenido, que empezará varias semanas antes de la ansiada gala.
+      Pensado exclusivamente para la comunidad de streaming hispanohablante. No te
+      lo pierdas.
+    </p>
   </BentoItem>
   <BentoItem
     class:list="col-span-10 md:col-span-4"
@@ -61,7 +69,7 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       class="background transition-scale absolute bottom-0 left-0 top-0
 -z-10 h-full w-full bg-blue-950
 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/mountain.webp');"
+      style="background-image: url('/laptop.webp');"
     >
     </div>
   </BentoItem>
