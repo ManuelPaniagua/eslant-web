@@ -1,0 +1,5 @@
+### Technologie 
+- Tailwind
+- Tailwind animated https://www.tailwindcss-animated.com/ (video animations)
+- Bento
+- Clip path https://bennettfeely.com/clippy/ (video Hexagonal form)

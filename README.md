@@ -1,3 +1,6 @@
+# Learning about Astro  and Tailwind from Minudev
+Minudev is a youtuber that do educativ videos about programing. We do together this web.
+
 # Astro Starter Kit: Basics
 
 ```sh
